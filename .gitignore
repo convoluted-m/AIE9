@@ -1,4 +1,13 @@
-.DS_Store
+# Environment variables
 .env
+env/
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# macOS specific files
+.DS_Store
+
 content/
 .claude/

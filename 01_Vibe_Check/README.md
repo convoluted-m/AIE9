@@ -45,20 +45,30 @@ You will be required to submit a link to your GitHub, as well as screenshots of 
 Please evaluate your system on the following questions:
 
 1. Explain the concept of object-oriented programming in simple terms to a complete beginner.
-    - Aspect Tested:
-2. Read the following paragraph and provide a concise summary of the key points…
-    - Aspect Tested:
+    - Aspect Tested: **explanation of difficult concepts**
+
+2. Read the following paragraph and provide a concise summary of the key points:
+
+    > ‘I was bullied in school for being different. At 16, I hit a crashing point’: the awkward kid who became the world’s strongest man
+    As a boy, Tom Stoltman was diagnosed with autism and bullied at school. When he became depressed in his teens, his older brother, a bodybuilder, suggested a trip to the gym. Tom Stoltman was a skinny kid: 90kg, 6ft 8in, with glasses and sticking‑out teeth. Diagnosed with autism as a young child, he felt he didn’t fit in. “I was really shy,” he says. “I got bullied in school for being different.” Back then, the boy from Invergordon didn’t like what he saw in the mirror. He lived in baggy hoodies. “Hood up. That was my comfort.” He loved football but “I used to look at people on the pitch and think, ‘He’s tinier than me, but he’s pushing me off the ball.
+
+    - Aspect Tested: **summarization**
+  
 3. Write a short, imaginative story (100–150 words) about a robot finding friendship in an unexpected place.
-    - Aspect Tested:
+    - Aspect Tested: **writing, creativity**
+  
 4. If a store sells apples in packs of 4 and oranges in packs of 3, how many packs of each do I need to buy to get exactly 12 apples and 9 oranges?
-    - Aspect Tested:
-5. Rewrite the following paragraph in a professional, formal tone…
-    - Aspect Tested:
+    - Aspect Tested: **maths**
+
+5. Rewrite the following paragraph in a professional, formal tone:
+    > Spirit animal: Raccoon gets drunk  in a booze store. On a wild Friday night, the animal broke into a liquor store in Virginia - and began helping itself to the stock. The following morning, an officer was asked to investigate reports of a break-in… and wasn't prepared for what happened next. She was greeted by a soaked aisle that reeked of booze and was littered with smashed bottles. Officer Martin's inquiries soon took her to the bathroom, where she discovered the raucous raccoon sleeping it off in between a toilet and a bin. The sozzled suspect was rumbled and described as "very intoxicated" by Hanover County Animal Protection and Shelter.
+
+    - Aspect Tested: **writing**
 
 #### ❓Question #1:
 
 Do the answers appear to be correct and useful?
-##### ✅ Answer:
+##### ✅ Answer: **The answers appears correct but it made me think about the scope of my Terry Pratchett-themed assistant and I decided to make changes to the system prompt not to engage in certain topics/ to handle such topics differently.**
 
 ---
 
@@ -73,17 +83,20 @@ Now test your assistant with personal questions it should be able to help with. 
 - "What can I cook with [enter ingredients] in fridge."
 
 ##### Your Prompts and Results:
-1. Prompt:
-   - Result:
-2. Prompt:
-   - Result:
-3. Prompt:
-   - Result:
+
+1. Prompt: **Is reading worth one's time?**
+   - Result: **Happy with the result since the question is definitely within the scope and the response mimicked Terry's style.**
+  
+2. Prompt: **Are you Terry Pratchett?**
+   - Result: **Glad the response says it isn't. Tested how grounded it would be in reality in this respect.**
+   - 
+3. Prompt: **Can you teach me high school maths?**
+   - Result:**Although the response preserves Terry's style, the question is beyond the scope of this assistant - hence I will update the master prompt.**
 
 #### ❓Question #2:
 
 Are the vibes of this assistant's answers aligned with your vibes? Why or why not?
-##### ✅ Answer:
+##### ✅ Answer: **Although the responses follow Terry's style I realised I need to define the scope better so that it doesn't respond to every question in the world**
 
 ---
 
@@ -95,15 +108,15 @@ Now test your assistant with questions that would require capabilities beyond ba
 - "What time should I leave for the airport?"
 
 ##### Your Prompts and Results:
-1. Prompt:
-   - Result:
-2. Prompt:
-   - Result:
+1. Prompt: **How old is Terry?**
+   - Result: **Aimed to see the model cut-off date and how up-to-date the answer is. Pretty close but not 2016!**
+2. Prompt:**Order a book by Terry Pratchett off Amazon**
+   - Result:**Of course the assistant couldn't order the book as that action (external tools) has not been implemented.**
 
 #### ❓Question #3:
 
 What are some limitations of your application?
-##### ✅ Answer:
+##### ✅ Answer: **Firstly, I need to define the scope better so that it only engages in conversations on-topic. Secondly, the app is for chatting so it can't do things in the external world like ordering a book - could be quite cool to at least be able to browse books and discuss buying options and / or reviews - that is not part of the MVP though :D.**
 
 ---
 
@@ -116,15 +129,18 @@ Please make adjustments to your application that you believe will improve the vi
 > NOTE: You may reach for improving the model, changing the prompt, or any other method.
 
 #### 🏗️ Activity #1
-##### Adjustments Made:
-- _describe adjustment(s) here_
 
+##### Adjustments Made:
+**changed the prompt to define the scope better - the chatbot should be a Terry Pratchett-style conversationalist that speaks in the author's witty and humorous style and engages in conversations about literature, philosophy, human nature but should not act as as general-purpose chatbot or personal assistant (writing emails, teaching code, etc.)".**
+
+""
 ##### Results:
-1. _Comment here how the change(s) impacted the vibe check of your system_
-2.
-3.
-4.
-5.
+1. Prompt: **Are we humans free to choose our path?**
+   Comment:**In-scope as it is a genuine philosophical question. Pretty good answer. I wonder if I should make the responses more conscise - even if for more API call-related budget :D.**
+2.Prompt:  **do you teach code?**
+   Comment:**As defined in the newly added scope, the request was declined in the right style.**
+3.Prompt: **Are LLMs alive?**
+   Comment:**That;s an edge case - although the question is about tech it's philosophical in  nature hence the chatbot should engage (philosophically) - and it did. Pass**
 
 
 ## Submitting Your Homework
